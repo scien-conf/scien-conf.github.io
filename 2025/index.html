@@ -1,687 +1,821 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0027)https://acns-sci.github.io/ -->
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>
-      Workshop on Secure Cryptographic Implementation (SCI) In conjunction with
-      ACNS 2025
-    </title>
-    <style type="text/css">
-      body {
-        font-family: arial, sans-serif;
-      }
+<!doctype html>
+<html class="no-js" lang="en">
 
-      p {
-        font-family: arial, sans-serif;
-      }
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-      /* #gotopbtn {
-      width: 100px;
-      height: 30px;
-      background: #fff;
-      position: fixed;
-      bottom: 100px;
-      right: 20px;
-      display: block;
-      cursor: pointer;
-      font-size: 14px;
-      line-height: 30px;
-    } */
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-      ul li {
-        margin: 10px 0;
-      }
-      .STYLE2 {
-        color: #0000ff;
-        font-weight: bold;
-      }
-      .STYLE5 {
-        color: #841027;
-        font-weight: bold;
-        font-size: x-large;
-      }
-      .STYLE6 {
-        color: #841027;
-      }
-      .STYLE9 {
-        color: #841027;
-        font-weight: bold;
-        font-size: large;
-      }
-      .STYLE10 {
-        color: #000000;
-      }
-    </style>
-    <!--[if lt IE 7]>
-      <style type="text/css">
-        #gotopbtn {
-          position: absolute;
-          top: expression(eval(document.documentElement.scrollTop + 350));
-        }
-      </style>
-    <![endif]-->
-  </head>
-  <!-- <body style="background-image: url(rome1.jpg);"></body> -->
-  <body
-    background="Bildschirm.png"
-    style="
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-attachment: fixed;
-    "
-  >
-    <a id="top"></a>
-    <table style="margin: 0 auto; width: 960px; background-color: #911c2f">
-      <tbody>
-        <tr>
-          <td height="20"></td>
-        </tr>
-        <tr style="background-image: url(&#39;header.png&#39;); height: 200px">
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>ACNS-SCI 2025</title>
 
-    <table
-      width="100%"
-      border="0"
-      cellpadding="0"
-      cellspacing="0"
-      style="
-        margin: 0 auto;
-        width: 960px;
-        background-color: #ffffff;
-        opacity: 0.85;
-      "
-    >
-      <tbody>
-        <tr>
-          <td
-            width="70%"
-            rowspan="2"
-            align="center"
-            valign="middle"
-            bgcolor="ffffff"
-            style="padding: 10px"
-          >
-            <div align="left">
-              <!-- <p
-                class="STYLE2"
-                style="text-align: justify; text-justify: inter-ideograph"
-              >
-                <span
-                  class="STYLE2"
-                  style="text-align: justify; text-justify: inter-ideograph"
-                  >Workshop Arrangement</span
-                >
-              </p>
-              <ul>
-                <li><b>Date:</b> March 6, 2024.</li>
-                <li>
-                  <b>Venue:</b> Room 001, A6 Building,
-                  <a
-                    href="https://nyuad.nyu.edu/en/about/nyuad-at-a-glance/the-campus.html"
-                    target="_blank"
-                    >New York University Abu Dhabi campus</a
-                  >
-                </li>
-                <li>
-                  <b>Accommodation:</b> The ACNS conference will provide
-                  transportation from and to
-                  <a
-                    href="https://wp.nyu.edu/acns2024/accommodation/"
-                    target="_blank"
-                    >these hotels</a
-                  >
-                  from the NYU Abu Dhabi campus.
-                </li>
-                <li><b>Schedule:</b></li>
-                <ul>
-                  <li>Opening Remarks (9:30-9:40, UTC+4)</li>
-                  <li>
-                    Keynote (9:40-10:40, UTC+4): Searchable Symmetric Encryption
-                    and Its Attacks, by Dr. Kaitai Liang
-                  </li>
-                  <li>
-                    Session 1 (10:50-11:40, UTC+4): Implementation of symmetric
-                    algorithms
-                  </li>
-                  <ul>
-                    <li>
-                      Automated Generation of Masked Nonlinear Components: From
-                      Lookup Tables to Private Circuits
-                    </li>
-                    <li>
-                      Pushing AES-256-GCM to Limits: Design, Implementation and
-                      Real FPGA Tests
-                    </li>
-                  </ul>
-                  <li>
-                    Session 2 (11:50-12:40, UTC+4): Side-channel attack and
-                    defense
-                  </li>
-                  <ul>
-                    <li>
-                      Cross-Correlation Based Trace Segmentation for Clustering
-                      Power Analysis on Public Key Cryptosystems
-                    </li>
-                    <li>
-                      A Command-Activated Hardware Trojan Detection Method Based
-                      on LUNAR Framework
-                    </li>
-                  </ul>
-                  <li>
-                    Session 3 (14:00-14:50, UTC+4): Application of pubic-key
-                    algorithms
-                  </li>
-                  <ul>
-                    <li>Fully Hybrid TLSv1.3 in WolfSSL on Cortex-M4</li>
-                    <li>
-                      Towards Discovering Quantum-Threats for Applications using
-                      Open-Source Libraries
-                    </li>
-                  </ul>
-                </ul>
-              </ul>
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
 
-              <hr />
-              <p
-                class="STYLE2"
-                style="text-align: justify; text-justify: inter-ideograph"
-              >
-                <span
-                  class="STYLE2"
-                  style="text-align: justify; text-justify: inter-ideograph"
-                  >Keynote Speech</span
-                >
-              </p>
-              <p
-                align="left"
-                style="text-align: justify; text-justify: inter-ideograph"
-              >
-                <b>Title:</b> Searchable Symmetric Encryption and Its Attacks.
-              </p>
-              <p
-                align="left"
-                style="text-align: justify; text-justify: inter-ideograph"
-              >
-                <b>Abstract:</b> Searchable Symmetric Encryption (SSE)
-                represents an intriguing technique that empowers users to
-                delegate keyword searches over encrypted databases to an
-                honest-but-curious server. The primary goal is to uphold the
-                confidentiality of both the keywords and the encrypted
-                documents. A comprehensive understanding of SSE entails
-                navigating through the intricacies of how it facilitates secure
-                and privacy-preserving searches within the realm of encrypted
-                data. In this talk, we will embark on a detailed exploration of
-                SSE's underlying concepts, mechanisms, and the intricate
-                security notions that serve as the foundation for this
-                cryptographic technique. Acknowledging that no cryptographic
-                protocol is impervious to vulnerabilities, the discussion will
-                delve into an examination of current attacks on SSE. This aims
-                to deepen comprehension of the strengths and limitations
-                inherent in SSE, a critical aspect for its ongoing development
-                and effective deployment in real-world applications. At last,
-                the talk will shed light on some of the open challenges
-                associated with SSE.
-              </p>
-              <p
-                align="left"
-                style="text-align: justify; text-justify: inter-ideograph"
-              >
-                <b>Speaker:</b> Dr. Kaitai Liang is a tenured faculty member in
-                the Cybersecurity group at Delft University of Technology. His
-                research, featured in esteemed international information
-                security journals and conferences like USENIX Security, NDSS,
-                ESORICS (with a best research paper award), IEEE TIFS, and IEEE
-                TDSC, addresses cybersecurity challenges using information
-                security and cryptographic tools. As a principal investigator in
-                various EU funded projects, he has demonstrated real-world
-                security impact through collaborations with academic and
-                industrial partners. Dr. Liang has served TPC member, General
-                Chair, and Steering Committee for international security and
-                privacy conferences, e.g., IEEE Euro S&P, ESORICS, IEEE CSF, and
-                PoPETs, and an Associate Editor for international journals such
-                as the Computer Journal, IEEE Transactions on Artificial
-                Intelligence, and the EURASIP Journal on Information Security.
-                He has also contributed to ISO standards as a member of the
-                standards committee 381027 "Cybersecurity & Privacy" at NEN.
-              </p>
-              <hr />
+        <!--linear icon css-->
+		<link rel="stylesheet" href="../assets/css/linearicons.css">
 
-              <p
-                class="STYLE2"
-                style="text-align: justify; text-justify: inter-ideograph"
-              >
-                <span
-                  class="STYLE2"
-                  style="text-align: justify; text-justify: inter-ideograph"
-                  >Accepted Papers</span
-                >
-              </p>
-              <ul>
-                <li>
-                  #1 - Automated Generation of Masked Nonlinear Components: From
-                  Lookup Tables to Private Circuits
-                </li>
-                <li>
-                  #2 - Pushing AES-256-GCM to Limits: Design, Implementation and
-                  Real FPGA Tests
-                </li>
-                <li>
-                  #3 - Cross-Correlation Based Trace Segmentation for Clustering
-                  Power Analysis on Public Key Cryptosystems
-                </li>
-                <li>#4 - Fully Hybrid TLSv1.3 in WolfSSL on Cortex-M4</li>
-                <li>
-                  #5 - A Command-Activated Hardware Trojan Detection Method
-                  Based on LUNAR Framework
-                </li>
-              </ul>
-              <p
-                class="STYLE2"
-                style="text-align: justify; text-justify: inter-ideograph"
-              >
-                <span
-                  class="STYLE2"
-                  style="text-align: justify; text-justify: inter-ideograph"
-                  >Conditionally Accepted Papers</span
-                >
-              </p>
-              <ul>
-                <li>
-                  #1 - Towards Discovering Quantum-Threats for Applications
-                  using Open-Source Libraries
-                </li>
-                <li>
-                  #2 - Analysis of Remote Attestation Mechanism for
-                  Heterogeneous TEEs
-                </li>
-              </ul>
-              <p style="text-align: justify; text-justify: inter-ideograph">
-                <b>Note:</b> Each accepted workshop paper needs one registration
-                at full rate before (January 25th) and in-person presentation.
-                Please refer to
-                <a
-                  href="https://wp.nyu.edu/acns2024/registration/"
-                  target="_blank"
-                  >ACNS 2024 registration link</a
-                >
-                to finish this process.
-              </p>
-            </div>
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="../assets/css/flaticon.css">
 
-            <hr /> -->
-            <p
-              align="left"
-              class="STYLE2"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              <br />
-              <span
-                class="STYLE5"
-                style="text-align: justify; text-justify: inter-ideograph"
-                >ACNS Workshop on SCI: Call for Papers
-              </span>
-            </p>
-            <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              In recent years, we have witnessed severe security incidences
-              caused by buggy protocols or implementations of cryptographic
-              algorithms: POODLE, DROWN, OpenSSL Heartbleed, Windows certificate
-              validation vulnerabilities, PDF shadow attacks, Google Titan Token
-              Bluetooth bugs, etc. It is critical for practitioners and
-              researchers to ensure the security of cryptographic software and
-              hardware, which are essential for a wide range of systems,
-              services, and applications.
-            </p>
-            <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              The aim of the SCI workshop is to provide an international forum
-              of scientific research and development to explore the security
-              issues in the implementation and deployment of cryptographic
-              solutions. We are interested in these main aspects: (1)
-              vulnerabilities and defenses in the implementation of
-              cryptographic algorithms; (2) vulnerabilities and defenses in the
-              implementation of cryptographic protocols; (3) defective
-              cryptographic algorithms and protocols deployed in the wild; (4)
-              weak cryptographic keys and random numbers in the cryptographic
-              implementation; (5) runtime cryptographic key attacks and
-              protections; (6) certificates and key management; (7) misuse or
-              abuse of cryptographic services; and (8) other topics on secure
-              cryptographic implementations.
-            </p>
-            <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              We try to promote secure cryptographic solutions in the Internet,
-              by exploring and discussing the (in)security issues. We solicit
-              submissions of original research papers on a wide range of topics,
-              including but not limited to:
-            </p>
-            <div align="left">
-              <ul>
-                <li>
-                  Secure implementations of crypto algorithms &amp; protocols
-                </li>
-                <li>
-                  Fuzzing and vulnerabilities of crypto algorithms &amp;
-                  protocols
-                </li>
-                <li>
-                  Measurement of cryptographic solutions in the wild, defective
-                  or updated
-                </li>
-                <li>Designs of random bit generators</li>
-                <li>
-                  Weak cryptographic keys and defective random bit generators
-                </li>
-                <li>Side channel attacks and defenses</li>
-                <li>Cryptographic key protections and memory attacks</li>
-                <li>PKI certificate services and key management</li>
-                <li>HTTPS/TLS vulnerabilities and attacks</li>
-                <li>Measurement and bugs of certificate-based solutions</li>
-                <li>Audit and monitoring of cryptographic services</li>
-                <li>
-                  Physical attacks and defenses of cryptographic implementation
-                </li>
-                <li>
-                  Verification and evaluation of cryptographic implementation
-                </li>
-                <li>High-performance cryptographic engines</li>
-                <li>Cryptographic hardware</li>
-                <li>Cryptography for Blockchain</li>
-                <li>Cryptography for IoT/CPS</li>
-                <li>Cryptography for the Cloud</li>
-                <li>Cryptography for Mobile systems</li>
-                <li>Cryptography for VANET</li>
-              </ul>
-            </div>
-            <p align="left"></p>
-            <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              We are especially interested in papers with novel ideas, position
-              papers, pilot studies, and initial findings. ACNS will also award
-              a best papers from the 2025 ACNS workshops (ADSC, AIBlock, AIHWS,
-              AIoTS, CIMSS, Cloud S&amp;P, SCI, SecMT, SiMLA and S&amp;P-FL),
-              with 500 EUR prize sponsored by Springer. Meanwhile, the workshop
-              will include an interesting keynote talk, which will be announced
-              on the workshop web site as arrangements are finalized.
-            </p>
-            <!-- <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              ACNS'25 offers travel grants for students, which encourages
-              greater student participation and submission of their papers. You
-              can find more details about these grants on the ACNS'25 Student
-              Travel Grants website (<a
-                href="https://wp.nyu.edu/acns2024/student-travel-grants/"
-                target="_blank"
-                >https://wp.nyu.edu/acns2024/student-travel-grants/</a
-              >).
-            </p> -->
-            <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              Prospective authors are invited to submit manuscripts describing
-              original work. The manuscript has to be written in English and in
-              PDF format. All submissions must follow the original LNCS format
-              (accessible on the 
-              <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
-                >Springer LCNS author guidelines</a
-              > webpage) with a page limit of 20 pages including all references and
-              appendices.
-            </p>
-            <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              The proceedings of the SCI workshop will be published by Springer
-              in the LNCS series.
-            </p>
-            <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              <strong>Submit your papers:</strong>
-              <a
-                href="https://easychair.org/conferences/?conf=wsacns25"
-                target="_blank"
-                >https://easychair.org/conferences/?conf=wsacns25</a
-              >
-            </p>
-            <p
-              align="left"
-              style="text-align: justify; text-justify: inter-ideograph"
-            >
-              <strong><u>Program Committee</u></strong>
-            </p>
-            TBD
-            <!-- <div align="left">
-              <ul>
-                <li class="STYLE10">
-                  <strong>Sebastian Berndt</strong> University of Lübeck,
-                  Germany
-                </li>
-                <li class="STYLE10">
-                  <strong>Florian Caullery</strong> HENSOLDT Cyber GmbH, Germany
-                </li>
-                <li class="STYLE10">
-                  <strong>Bo Chen</strong> Michigan Technological University,
-                  USA
-                </li>
-                <li class="STYLE10">
-                  <strong>Jiankuo Dong</strong> Nanjing University of Posts and
-                  Telecommunications, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Haixin Duan</strong> Tsinghua University, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Shanqing Guo</strong> Shandong University, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Honggang Hu</strong> University of Science and
-                  Technology of China, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Shijie Jia</strong> Chinese Academy of Sciences, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Rongxing Lu</strong> University of New Brunswick,
-                  Canada
-                </li>
-                <li class="STYLE10">
-                  <strong>Bingyu Li</strong> Beihang University, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Fengjun Li</strong> University of Kansas, USA
-                </li>
-                <li class="STYLE10">
-                  <strong>Ximeng Liu</strong> Fuzhou University, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Chunli Lv</strong> China Agricultural University,
-                  China
-                </li>
-                <li class="STYLE10">
-                  <strong>Qiang Tang</strong> The University of Sydney,
-                  Australia
-                </li>
-                <li class="STYLE10">
-                  <strong>Sazzadur Rahaman</strong> University of Arizona, USA
-                </li>
-                <li class="STYLE10">
-                  <strong>Kui Ren</strong> Zhejiang University, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Ruisheng Shi</strong> Beijing University of Posts and
-                  Telecommunications, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Shifeng Sun</strong> Shanghai Jiao Tong University,
-                  China
-                </li>
-                <li class="STYLE10">
-                  <strong>An Wang</strong> Beijing Institute of Technology,
-                  China
-                </li>
-                <li class="STYLE10">
-                  <strong>Ding Wang</strong> Nankai University, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Juan Wang</strong> Wuhan University, China
-                </li>
-                <li class="STYLE10">
-                  <strong>Fangyu Zheng</strong> Chinese Academy of Sciences,
-                  China
-                </li>
-                <li class="STYLE10">
-                  <strong>Cong Zuo</strong> Beijing Institute of Technology,
-                  China
-                </li>
-              </ul>
-            </div>
-          </td> -->
-          <td width="5%" height="37" bgcolor="ffffff"></td>
-          <td
-            width="25%"
-            rowspan="2"
-            valign="top"
-            bgcolor="ffffff"
-            style="padding: 10px"
-          >
-            <h4>
-              <br />
-              <span class="STYLE9">In Conjunction with</span><br />
-              <a href="https://acns2025.fordaysec.de/" target="_blank">
-                ACNS 2025</a
-              >
-            </h4>
-            <h4 class="STYLE9">Important Dates:</h4>
-            <p>
-              Paper submission deadline:<br />
-              <span style="color: Red"
-                >March 23, 2025. 23:59, AoE</span
-              >
-            </p>
-            <p>
-              Acceptance Notification:<br />
-              <span style="color: Red">April 23, 2025</span>
-            </p>
-            <p>
-              Camera ready:<br />
-              <span style="color: Red">May 12, 2025</span>
-            </p>
-            <p class="STYLE9">Workshop Chairs:</p>
-            <p>
-              Dr. Jingqiang Lin<br />
-              <span>University of Science and Technology of China </span><br />
-              linjq &lt;at&gt; ustc.edu.cn
-            </p>
-            <p>
-              Dr. Bo Luo<br />
-              <span>University of Kansas</span><br />
-              bluo &lt;at&gt; ku.edu
-            </p>
-            <p class="STYLE9">Publication Chair</p>
-            <p>
-              Dr. Jun Shao<br />
-              Zhejiang Gongshang University<br />chn.junshao &lt;at&gt;
-              gmail.com
-            </p>
-            <p class="STYLE9">Publicity Chair</p>
-            <p>
-              Dr. An Wang<br />
-              Beijing Institute of Technology<br />wanganl &lt;at&gt; bit.edu.cn
-            </p>
-            <p class="STYLE9">Web Chair</p>
-            <p>
-              Fangyu Zheng <br />
-              Chinese Academy of Sciences
-            </p>
+		<!--animate.css-->
+        <link rel="stylesheet" href="../assets/css/animate.css">
 
-            <p class="STYLE9">Past SCI Workshops</p>
-            <p>
-              <a
-                href="https://acns-sci.github.io/2024/index.html"
-                target="_blank"
-                >ACNS Workshop on SCI 2024<br />
-                <br />
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://acns-sci.github.io/2023/index.html"
-                target="_blank"
-                >ACNS Workshop on SCI 2023<br />
-                <br />
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://acns-sci.github.io/2022/index.html"
-                target="_blank"
-                >ACNS Workshop on SCI 2022<br />
-                <br />
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://acns-sci.github.io/2021/index.html"
-                target="_blank"
-                >ACNS Workshop on SCI 2021<br />
-                <br />
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://acns-sci.github.io/2020/index.html"
-                target="_blank"
-                >ACNS Workshop on SCI 2020<br />
-                <br />
-                <br />
-              </a>
-            </p>
-            <p>
-              <a href="http://jianying.space/acns/" target="_blank"
-                ><img src="ACNS.png" width="200"
-              /></a>
-            </p>
-            <a href="http://jianying.space/acns/" target="_blank"> </a>
-            <p>
-              <a
-                href="https://link.springer.com/conference/acns"
-                target="_blank"
-              ></a
-              ><a
-                href="https://link.springer.com/conference/acns"
-                target="_blank"
-                ><img src="LNCS-Logo.jpg" width="200" />
-              </a>
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td width="5%" bgcolor="ffffff"></td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="gotopbtn">
-      <a href="https://acns-sci.github.io/"
-        ><img src="gototop.png" alt="" title="go to top"
-      /></a>
-    </div>
-    <script type="text/javascript"></script>
-  </body>
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="../assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+	
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+								
+				                <a class="navbar-brand" href="index.html", style="display: flex">
+									<img src="../assets/images/brand/encrypt.png" alt="" style="height: 0.82em; vertical-align: middle; margin-right: 10px;"> 
+									ACNS-SCI<span></span>
+								</a>
+
+				            </div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li class="scroll active"><a href="#home">home</a></li>
+				                    <li class="scroll"><a href="#chairs">Chairs</a></li>
+				                    <li class="scroll"><a href="#call">Calls &amp; Submissions</a></li>
+									<li class="scroll"><a href="#keynote">Keynote</a></li>
+
+				                    <!-- <li class="scroll"><a href="#schedule">Schedule</a></li> -->
+				                    <li class="scroll"><a href="#pc">Program Committee</a></li>
+				                    <!-- <li class="scroll"><a href="#contact">contact</a></li> -->
+									 
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>6th ACNS Workshop on Secure Cryptographic Implementation</h2>
+					<p>
+						June 23-26, 2025, Munich, Germany 
+					</p>
+					<!-- <button class="welcome-btn" onclick="window.location.href='#'">contact us</button> -->
+				</div>
+			</div>
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+		<small>© München Tourismus, Thomas Klinger</small>
+		
+		<br><br><br><br>
+
+		<div class="container">
+			<p>
+				In recent years, we have witnessed severe security incidences caused by buggy protocols or implementations of cryptographic algorithms: POODLE, DROWN, OpenSSL Heartbleed, Windows Curveball certificate validation vulnerability, PDF shadow attacks, Google Titan Token Bluetooth bug, Samsung Galaxy IV reuse, vulnerable DUHK RNG, etc. It is critical for practitioners and researchers to ensure the security of cryptographic software and hardware, which are essential for a wide range of systems, services, and applications.
+			</p>
+			<br>
+			<p>
+			<b>IMPORTANT UPDATE: The 6th ACNS-SCI workshop will be held in June 25th, in conjunction with the 23rd International Conference on Applied Cryptography and Network Security (ACNS 2025) in Munich, Germany. </b>
+			</p>
+		</div>
+
+		<br><br>
+
+		<section id="chairs"  class="clients-say">
+			<div class="container">
+				<div class="section-header">
+					<h2>Chairs</h2>
+				</div>
+				<div class="row">
+					<div class="owl-carousel testimonial-carousel">
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="../assets/images/clients/ljq.jpg" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Dr. Jingqiang Lin
+											<br>
+											University of Science and Technology of China
+											<br>
+											linjq &lt;at&gt; ustc.edu.cn
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a>Workshop Co-Chair</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="../assets/images/clients/luo-new.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Dr. Bo Luo
+											<br>
+											University of Kansas
+											<br>
+											bluo &lt;at&gt; ku.edu
+											<br><br>
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a>Workshop Co-Chair</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="../assets/images/clients/sj.jpg" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Dr. Jun Shao
+											<br>
+											Zhejiang Gongshang University
+											<br>
+											chn.junshao &lt;at&gt; gmail.com
+											<br><br>
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a>Publication Chair</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="../assets/images/clients/wa.jpg" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Dr. An Wang
+											<br>
+											Beijing Institute of Technology
+											<br>
+											wanganl &lt;at&gt; bit.edu.cn
+											<br><br>
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a>Publicity Chair</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="../assets/images/clients/zfy.jpg" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Dr. Fangyu Zheng
+											<br>
+											Chinese Academy of Sciences
+											<br>
+											zhengfangyu &lt;at&gt; ucas.ac.cn
+											<br><br>
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a>Web Chair</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--/.testimonial-carousel-->
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.clients-say-->	
+		<!-- clients-say end -->
+
+
+		<section id="program" class="new-cars"> 
+			<div class="container"> 
+				<div class="section-header"> 
+					<br> 
+					<h2>Program</h2> 
+				</div> 
+					<p><b>09:00–09:10</b>: Opening Remark - Jingqiang Lin</p>
+					<p><b>09:10–10:10</b>: <b>Keynote: <i>How the Microarchitecture Undermines Confidentiality and Integrity</i>, Daniel Gruss (Session Chair - Jingqiang Lin, University of Science and Technology of China)</b></p>
+					<p><b>10:10–10:30</b>: <b>Session I: Implementation of Hybrid Homomorphic Encryption (Session Chair - Wei Wang, University of Science and Technology of China)</b>
+					<ul style="margin-left: 20px; list-style-type: disc;"></ul>
+						<li><i>Improved Functional Bootstrapping of SM4 for Hybrid Homomorphic Encryption</i>, Jin Peng, Dachao Wang and Zheng Gong</li>
+					</ul>
+					</p>
+
+					</li>
+					<p><b>10:30–11:10</b>: Break</p>
+					<p><b>11:10–12:30</b>:  <b>Session II: Side-Channel Attacks (Session Chair - Yangguang Tian, University of Surrey)</b>
+					<ul style="margin-left: 20px; list-style-type: disc;"></ul>
+						<li><i>ChatGPT as Preprocessing Agents: A Case Study on Cryptographic Side-Channel Analysis</i>, Zhen Li, Anjiang Liu, An Wang and Weijia Wang</li>
+						<li><i>Improved PACD-based Attacks on RSA-CRT</i>, Guillaume Barbu, Laurent Grémy and Roch Lescuyer</li>
+						<li><i>Differential Fault Analysis against White-box SM4 Implementations</i>, Liangju Zhao, Luoqi Chen, Yufeng Tang and Zheng Gong</li>
+						<li><i>One Time is Enough: Chosen-Ciphertext Side-Channel Attack on ML-KEM Cryptosystems</i>, Yuhan Qian, Jing Gao, Yuchen Zhong, Yaoling Ding, Jingjie Wu, Weiping Gong, Zihe Lin and An Wang</li>
+					</ul>
+					</li>
+					<p><b>12:30–14:00</b>: Break</li>
+					<p><b>14:00–15:00</b>: <b>Session III: Implementation of Post-Quantum Cryptography  (Session Chair - Wei Wang, University of Science and Technology of China)</b>
+					<ul style="margin-left: 20px; list-style-type: disc;"></ul>
+						<li><i>Stateless Hash-Based Signatures for Post-Quantum Security Keys</i>, Ruben Gonzalez</li>
+						<li><i>PQMagic: Towards Secure and Efficient Post Quantum Cryptography Implementations</i>, Yituo He, Xinpeng Hao, Juanru Li and Yu Yu</li>
+						<li><i>Leveled Software Implementation of Polka and Comparison with Uniformly Masked Kyber</i>, Thibaud Schoenauen, Clément Hoffmann, Charles Momin, Thomas Peters and Francois-Xavier Standaert</li>
+					</ul>
+					</p>
+
+					<p><b>15:00–15:40</b>: <b>Session IV: Security Analysis of Post-Quantum Cryptography (Session Chair - Zengpeng Li, Shandong University)</b>
+					<ul style="margin-left: 20px; list-style-type: disc;"></ul>
+						<li><i>A Review of Lattice Cryptography Attack Cost Model</i>, Xi Hu, Yunfei Cao and Hong Xiang</li>
+						<li><i>Research on the Security Estimation Framework for Code-Based Public Key Cryptography Algorithms</i>, Haoyue Fu, Yunfei Cao, Hong Xiang and Congyi Zhang</li>
+					</ul>
+					</p>
+
+					<p><b>15:40–16:00</b>: Break</p>
+
+					<p><b>16:00–17:00</b>: <b>Session V: Applied Cryptography in the Real World (Session Chair - Jia Zhang, Tsinghua University)</b>
+					<ul style="margin-left: 20px; list-style-type: disc;"></ul>
+						<li><i>RCE-HVE: Plausible Deniability against Multi-Snapshot Adversaries with Amplified Storage</i>, Haoyang Xing, Chongyu Long, Anda Che, Fangyu Zheng and Jiwu Jing</li>
+						<li><i>Exploring the HTTPS OCSP Ecosystem: A Comprehensive Study</i>, Hengsheng Wang, Shushang Wen and Wei Wang</li>
+						<li><i>Paper Document Anti-counterfeiting System based on Digital Signatures and Image Processing</i>, Yiyan Zhao, Jiwu Jing, Junlin He and Fangyu Zheng</li>
+					</ul>
+					</p>
+			</div> 
+		</section> 
+
+		
+
+
+		<section id="keynote" class="new-cars"> 
+			<div class="container"> 
+				<div class="section-header"> 
+					<br> 
+					<h2>Keynote</h2> 
+				</div> 
+				<div class="speaker" style="display: flex; align-items: center;"> 
+					<!-- 图片文字垂直排列 -->
+					<div style="display: flex; flex-direction: column; margin-right: 20px;">
+						<img src="https://gruss.cc/portrait_small.jpg" 
+							alt="Daniel Gruss" 
+							style="width: auto; height: auto;">
+						<p style="text-align: center; margin-top: 10px; font-style: italic;">
+							<b>Professor Daniel Gruss,</b> <br> <b>Graz University of Technology</b>
+						</p>
+					</div>
+
+								
+					<div class="speaker-info"> 
+						<p><b>Title</b>: How the Microarchitecture undermines Confidentiality and Integrity</p>
+						<p><b>Abstract</b>: In this talk we will discuss a range of microarchitectural attacks. We will see that the microarchitecture is a common source of information leakage, with the example of different side channel attacks, transient-execution attacks, and even architectural leakage due to bugs in the processor implementation. We then show that integrity can also be compromised both due to physical effects and due to implementation bugs.</p> 
+
+						<p><b>Bio</b>: Daniel Gruss is a Professor at Graz University of Technology. He has 
+							been teaching undergraduate courses since 2010. Daniel's research 
+							focuses on side channels and transient execution attacks. He implemented 
+							the first remote fault attack running in a website, known as 
+							Rowhammer.js.  His research team was one of the teams that found the 
+							Meltdown and Spectre bugs published in early 2018. He frequently speaks 
+							at top international venues. In 2022, he received a prestigious ERC StG 
+							Grant to research the foundations of sustainable security.</p> 
+					</div> 
+				</div> 
+			</div> 
+		</section> 
+
+
+
+		<section id="accepetd papers" class="new-cars"> 
+			<div class="container"> 
+				<div class="section-header"> 
+					<br> 
+					<h2>Accepted Papers</h2> 
+				</div> 
+				<ol>
+					<li><b>Improved PACD-based Attacks on RSA-CRT</b>. Guillaume Barbu, Laurent Grémy and Roch Lescuyer</li>
+					<li><b>One Time is Enough: Chosen-Ciphertext Side-Channel Attack on ML-KEM Cryptosystems</b>. Yuhan Qian, Jing Gao, Yuchen Zhong, Yaoling Ding, Jingjie Wu, Weiping Gong, Zihe Lin and An Wang</li>
+					<li><b>A Review of Lattice Cryptography Attack Cost Model</b>. Xi Hu, Yunfei Cao and Hong Xiang</li>
+					<li><b>Exploring the HTTPS OCSP Ecosystem: A Comprehensive Study</b>. Hengsheng Wang, Shushang Wen and Wei Wang</li>
+					<li><b>Differential Fault Analysis against White-box SM4 Implementations</b>. Liangju Zhao, Luoqi Chen, Yufeng Tang and Zheng Gong</li>
+					<li><b>Leveled Software Implementation of Polka and Comparison with Uniformly Masked Kyber</b>. Thibaud Schoenauen, Clément Hoffmann, Charles Momin, Thomas Peters and Francois-Xavier Standaert</li>
+					<li><b>Research on the Security Estimation Framework for Code-Based Public Key Cryptography Algorithms</b>. Haoyue Fu, Yunfei Cao, Hong Xiang and Congyi Zhang</li>
+					<li><b>Paper Document Anti-counterfeiting System based on Digital Signatures and Image Processing</b>. Yiyan Zhao, Jiwu Jing, Junlin He and Fangyu Zheng</li>
+					<li><b>PQMagic: Towards Secure and Efficient Post Quantum Cryptography Implementations</b>. Yituo He, Xinpeng Hao, Juanru Li and Yu Yu</li>
+					<li><b>Stateless Hash-Based Signatures for Post-Quantum Security Keys</b>. Ruben Gonzalez</li>
+					<li><b>ChatGPT as Preprocessing Agents: A Case Study on Cryptographic Side-Channel Analysis</b>. Zhen Li, Anjiang Liu, An Wang and Weijia Wang</li>
+					<li><b>Improved Functional Bootstrapping of SM4 for Hybrid Homomorphic Encryption</b>. Jin Peng, Dachao Wang and Zheng Gong</li>
+					<li><b>RCE-HVE: Plausible Deniability against Multi-Snapshot Adversaries with Amplified Storage</b>. Haoyang Xing, Chongyu Long, Anda Che, Fangyu Zheng and Jiwu Jing</li>
+				</ol>
+
+			</div> 
+		</section> 
+
+
+
+		<section id="call" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+					<h2>Call for papers</h2>
+				</div>
+				<br>
+				<p>
+					The aim of the SCI workshop is to provide an international forum of scientific research and development to explore the security issues in the implementation and deployment of cryptographic solutions. We are interested in these main aspects: (1) vulnerabilities and defenses in the implementation of cryptographic algorithms; (2) vulnerabilities and defenses in the implementation of cryptographic protocols; (3) defective cryptographic algorithms and protocols deployed in the wild; (4) weak cryptographic keys and random numbers in the cryptographic implementation; (5) runtime cryptographic key attacks and protections; (6) certificates and key management; (7) misuse or abuse of cryptographic services; and (8) other topics on secure cryptographic implementations.
+				</p>
+				<br>
+				<p>
+					We try to promote secure cryptographic solutions in the Internet, by exploring and discussing the (in)security issues. We solicit submissions of original research papers on a wide range of topics, including but not limited to:
+				</p>
+				<br>
+				
+
+				
+					<ul class="ul-txt">
+					  <li>
+						Secure implementations of crypto algorithms &amp; protocols
+					  </li>
+					  <li>
+						Fuzzing and vulnerabilities of crypto algorithms &amp;
+						protocols
+					  </li>
+					  <li>
+						Measurement of cryptographic solutions in the wild, defective
+						or updated
+					  </li>
+					  <li>Designs of random bit generators</li>
+					  <li>
+						Weak cryptographic keys and defective random bit generators
+					  </li>
+					  <li>Side channel attacks and defenses</li>
+					  <li>Cryptographic key protections and memory attacks</li>
+					  <li>PKI certificate services and key management</li>
+					  <li>HTTPS/TLS vulnerabilities and attacks</li>
+					  <li>Measurement and bugs of certificate-based solutions</li>
+					  <li>Audit and monitoring of cryptographic services</li>
+					  <li>
+						Physical attacks and defenses of cryptographic implementation
+					  </li>
+					  <li>
+						Verification and evaluation of cryptographic implementation
+					  </li>
+					  <li>High-performance cryptographic engines</li>
+					  <li>Cryptographic hardware</li>
+					  <li>Cryptography for blockchain</li>
+					  <li>Cryptography for IoT/CPS</li>
+					  <li>Cryptography for the Cloud</li>
+					  <li>Cryptography for mobile systems</li>
+					  <li>Cryptography for VANET</li>
+					  <li>Cryptography for deep learning and artificial intelligence</li> 
+					</ul>
+				
+				<br>
+				<p>
+					We are especially interested in papers with novel ideas, position papers, 
+					pilot studies, and initial findings. An ACNS workshop best paper award 
+					will be selected from the accepted papers of all workshops. Meanwhile, 
+					the workshop will include an interesting keynote talk, which will be 
+					announced on the workshop web site as arrangements are finalized.
+				</p>
+				<br>
+				<p>
+					Prospective authors are invited to submit manuscripts describing
+					original work. The manuscript has to be written in English and in
+					PDF format. All submissions must follow the original LNCS format
+					(accessible on the 
+					<a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" class="a-txt"> 
+					Springer LCNS author guidelines</a> webpage) with a page limit of 20 pages including all references and
+              		appendices.
+				</p>
+				<br>
+				<p>
+					The post-proceedings of the SCI workshop will be published by Springer in the LNCS series.
+				</p>
+				<br>
+				<p>
+					<strong>Submit your papers:</strong>
+              		<a href="https://easychair.org/conferences/?conf=acnssci2025" class="a-txt">https://easychair.org/conferences/?conf=acnssci2025</a>
+				</p>
+			</div><!--/.container-->
+
+
+			<br><br><br>
+			<div class="container">
+				<div class="section-header">
+					<h2>Important Dates</h2>
+				</div>
+				<br>
+				<div class="service-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car"></i>
+								</div>
+								<h2><a>Paper submission deadline</a></h2>
+								<p>
+									<del>March 15</del> <b>March 22, 2025, 23:59, AoE (EXTENDED)</b>  
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-repair"></i>
+								</div>
+								<h2><a>Acceptance Notification</a></h2>
+								<p>
+									April 20, 2025  
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-1"></i>
+								</div>
+								<h2><a>Camera Ready</a></h2>
+								<p>
+									May 12, 2025
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+		</section>
+
+		<!--new-cars start -->
+		<!-- <section id="new-cars" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>checkout <span>the</span> latest cars</p>
+					<h2>newest cars</h2>
+				</div>
+				<div class="new-cars-content">
+					<div class="owl-carousel owl-theme" id="new-cars-carousel">
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="../assets/images/new-cars-model/ncm1.png" alt="img"/>
+										</div>
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">chevrolet camaro <span> za100</span></a></h2>
+											<p>
+												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+											</p>
+											<p class="new-cars-para2">
+												Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
+											</p>
+											<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+												view details
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="../assets/images/new-cars-model/ncm2.png" alt="img"/>
+										</div>
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">BMW series-3 wagon</a></h2>
+											<p>
+												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+											</p>
+											<p class="new-cars-para2">
+												Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
+											</p>
+											<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+												view details
+											</button>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="../assets/images/new-cars-model/ncm3.png" alt="img"/>
+										</div>
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">ferrari 488 superfast</a></h2>
+											<p>
+												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+											</p>
+											<p class="new-cars-para2">
+												Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
+											</p>
+											<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+												view details
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section> -->
+		<!--new-cars end -->
+
+		<!-- clients-say strat -->
+		<section id="pc"  class="clients-say">
+			<div class="container">
+				<div class="section-header">
+					<h2>Program Committee</h2>
+				</div>
+
+				<li class="STYLE10"><strong>Florian Caullery</strong> HENSOLDT Cyber GmbH, Germany</li>
+				<li class="STYLE10"><strong>Bo Chen</strong> Michigan Technological University, USA</li>
+				<li class="STYLE10"><strong>Yikang Chen</strong> The Chinese University of Hong Kong, China</li>
+				<li class="STYLE10"><strong>Jiankuo Dong</strong> Nanjing University of Posts and Telecommunications, China</li>
+				<li class="STYLE10"><strong>Haixin Duan</strong> Tsinghua University, China</li>
+				<li class="STYLE10"><strong>Shanqing Guo</strong> Shandong University, China</li>
+				<li class="STYLE10"><strong>Honggang Hu</strong> University of Science and Technology of China, China</li>
+				<li class="STYLE10"><strong>Shijie Jia</strong> Chinese Academy of Sciences, China</li>
+				<li class="STYLE10"><strong>Rongxing Lu</strong> Queen's University, Canada</li>
+				<li class="STYLE10"><strong>Bingyu Li</strong> Beihang University, China</li>
+				<li class="STYLE10"><strong>Fengjun Li</strong> University of Kansas, USA</li>
+				<li class="STYLE10"><strong>Chunli Lv</strong> China Agricultural University, China</li>
+				<li class="STYLE10"><strong>Kui Ren</strong> Zhejiang University, China</li>
+				<li class="STYLE10"><strong>Jun Shao</strong> Zhejiang Gongshang University, China</li>
+				<li class="STYLE10"><strong>Ruisheng Shi</strong> Beijing University of Posts and Telecommunications, China</li>
+				<li class="STYLE10"><strong>Shifeng Sun</strong> Shanghai Jiao Tong University, China</li>
+				<li class="STYLE10"><strong>Qiang Tang</strong> The University of Sydney, Australia</li>
+				<li class="STYLE10"><strong>An Wang</strong> Beijing Institute of Technology, China</li>
+				<li class="STYLE10"><strong>Ding Wang</strong> Nankai University, China</li>
+				<li class="STYLE10"><strong>Juan Wang</strong> Wuhan University, China</li>
+				<li class="STYLE10"><strong>Bowen Xu</strong> Ningbo University, China</li>
+				<li class="STYLE10"><strong>Fangyu Zheng</strong> Chinese Academy of Sciences, China</li>
+				<li class="STYLE10"><strong>Cong Zuo</strong> Beijing Institute of Technology, China</li>
+				<!-- <p style="text-align: center; margin: 20px 0; font-size:30px;"> TBD </p> -->
+				
+				<!-- <div class="row">
+					<div class="owl-carousel testimonial-carousel">
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="../assets/images/clients/c1.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">Name1</a></h2>
+										<h4>Affilication1</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="../assets/images/clients/c2.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">Name2</a></h2>
+										<h4>Affilication2</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="../assets/images/clients/c3.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa quae ab illo inventore verit. 
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">john doe</a></h2>
+										<h4>washington</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+
+		</section><!--/.clients-say-->	
+		<!-- clients-say end -->
+
+		<!--brand strat -->
+		<section id="brand"  class="brand">
+			<div class="container">
+				<div class="brand-area">
+					<div class="row" style="display: flex; justify-content: center; align-items: center;">
+						<div class="col-sm-2">
+							<a href="https://link.springer.com/conference/acns">
+								<img src="../assets/images/brand/logo-springer.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="col-sm-2">
+							<a href="http://jianying.space/acns/">
+								<img src="../assets/images/brand/ACNS.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="col-sm-2">
+							<a href="https://acns-sci.github.io/2024/index.html">
+								<img src="../assets/images/brand/encrypt.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+					</div><!--/.owl-carousel-->
+				</div><!--/.clients-area-->
+
+			</div><!--/.container-->
+
+		</section><!--/brand-->	
+		<!--brand end -->
+
+		<!--contact start-->
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="single-footer-widget">
+						<div class="footer-logo">
+							<a>Quick Links</a>
+						</div>
+						<p>
+							In Conjunction with <a href="https://acns2025.fordaysec.de/" class="a-txt" style="color:#fff"> ACNS 2025</a>.
+							<br>
+							Past SCI Workshops: <a href="https://acns-sci.github.io/2024/index.html" class="a-txt" style="color:#fff"> ACNS-SCI '24</a>, 
+												<a href="https://acns-sci.github.io/2023/index.html" class="a-txt" style="color:#fff"> ACNS-SCI '23</a>,
+												<a href="https://acns-sci.github.io/2022/index.html" class="a-txt" style="color:#fff"> ACNS-SCI '22</a>,
+												<a href="https://acns-sci.github.io/2021/index.html" class="a-txt" style="color:#fff"> ACNS-SCI '21</a>,
+												<a href="https://acns-sci.github.io/2020/index.html" class="a-txt" style="color:#fff"> ACNS-SCI '20</a>.
+						</p>
+						<p>
+							
+						</p>
+					</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>
+								&copy; copyright. Designed and developed by <a href="https://www.themesine.com/">themesine</a>.
+							</p><!--/p-->
+						</div>
+						<!-- <div class="col-sm-6">
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a>	
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="../assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="../assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="../assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="../assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src="../assets/js/custom.js"></script>
+        
+    </body>
+	
 </html>

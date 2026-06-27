@@ -528,6 +528,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 /*owl carousel*/
 
+#chairs.clients-say .owl-carousel .owl-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center top;
+}
+
 /*-------------------------------------
         9. Brand
 --------------------------------------*/

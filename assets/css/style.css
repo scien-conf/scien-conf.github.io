@@ -133,6 +133,74 @@ html,body{height: 100%;}
 
 /* section-header */
 
+.workshop-schedule,
+.schedule-session {
+    scroll-margin-top: 110px;
+}
+.schedule-date {
+    margin: 28px 0;
+    text-align: center;
+}
+.schedule-session {
+    margin-top: 44px;
+}
+.schedule-session h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-transform: none;
+}
+.session-time {
+    font-weight: 600;
+    white-space: nowrap;
+}
+.session-chair {
+    margin: 12px 0 24px;
+}
+.keynote-speaker {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+.keynote-portrait {
+    flex: 0 1 260px;
+    max-width: 100%;
+}
+.keynote-portrait img {
+    width: 100%;
+    height: auto;
+}
+.keynote-portrait p {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+.keynote-speaker .speaker-info {
+    flex: 1 1 600px;
+    min-width: 0;
+}
+.keynote-speaker .speaker-info p + p {
+    margin-top: 16px;
+}
+.session-papers {
+    padding-left: 24px;
+    color: #444a57;
+    line-height: 1.8;
+}
+.session-papers li {
+    padding-left: 4px;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+}
+@media (max-width: 600px) {
+    .schedule-session h3 {
+        font-size: 21px;
+    }
+    .keynote-portrait {
+        margin: 0 auto;
+    }
+}
+
 /*=============Style css=========*/
 
 
@@ -185,6 +253,17 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     margin-left: 15px;
 }
 .wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:30px 21px;}
+@media (min-width: 993px) {
+    nav.navbar.bootsnav ul.nav > li > a {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
 /*.nav li*/
 
 /*.menu-ui-design*/
